@@ -5,6 +5,7 @@ import ThreeGlobe from "three-globe";
 import { useThree, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "../data/globe.json";
+import { PerspectiveCamera } from "three";
 
 // Augment the ThreeElements interface from react-three-fiber so that <threeGlobe /> is recognized.
 declare module "@react-three/fiber" {
@@ -189,6 +190,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
     globeRef.current
       .ringsData([])
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .ringColor((e: any) => (t: any) => e.color(t))
       .ringMaxRadius(defaultProps.maxRings)
       .ringPropagationSpeed(RING_PROPAGATION_SPEED)
@@ -215,7 +217,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
     return () => clearInterval(interval);
   }, [globeRef.current, globeData]);
-
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return <threeGlobe ref={globeRef} scale={[2, 2, 2]} />;
 }
 
@@ -233,8 +236,9 @@ export function WebGLRendererConfig() {
 export function CameraUpdater() {
   const { camera, size } = useThree();
   useEffect(() => {
-    camera.aspect = size.width / size.height;
-    camera.updateProjectionMatrix();
+    const perspectiveCamera = camera as PerspectiveCamera;
+    perspectiveCamera.aspect = size.width / size.height;
+    perspectiveCamera.updateProjectionMatrix();
   }, [camera, size]);
   return null;
 }
