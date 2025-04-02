@@ -31,23 +31,6 @@ Built with **React**, **Vite**, **Chakra UI**, **Framer Motion**, and **Three.js
 
 
 
-## 📁 Project Structure
-
-/src 
-├── components/ # All reusable UI components 
-│ ├── Navbar.tsx 
-│ ├── Hero.tsx 
-│ ├── Projects.tsx 
-│ ├── Highlights.tsx 
-│ ├── Career.tsx 
-│ ├── Skills.tsx 
-│ └── Globe.tsx
-├── data/ # External JSON (e.g., globe data) 
-├── styles/ # Global CSS animations 
-├── pages/ # Page components 
-├── main.tsx # Vite entry point 
-└── theme.ts # Chakra theme customizations
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
@@ -56,11 +39,12 @@ Built with **React**, **Vite**, **Chakra UI**, **Framer Motion**, and **Three.js
 git clone https://github.com/Christopheryu29/portfolio-website.git
 cd portfolio-website
 
-2. Install Dependencies
+### 2. Install Dependencies
 
+```bash
 npm install
 
-3. Start the Development Server
+### 3. Start the Development Server
 
 npm run dev
 
