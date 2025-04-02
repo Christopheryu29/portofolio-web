@@ -1,55 +1,69 @@
-# React + TypeScript + Vite
+# 🌐 Christopher Ardell – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio – a sleek, 3D-infused, interactive site built to showcase my work, skills, and global collaboration capabilities.  
+Built with **React**, **Vite**, **Chakra UI**, **Framer Motion**, and **Three.js**.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [https://christopherardell.vercel.app](https://christopherardell.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ **React** – Component-based UI architecture  
+- ⚡ **Vite** – Super-fast development environment  
+- 🎨 **Chakra UI** – Clean, responsive UI with built-in theming  
+- 🎞 **Framer Motion** – Elegant animations and transitions  
+- 🌍 **Three.js / React Three Fiber** – Interactive 3D globe visual  
+- ☁️ **Vercel** – Deployed and optimized for speed  
+- 🌙 **Dark Mode** – Default dark mode with toggle support
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎯 Key Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🧭 Smooth in-page scroll navigation
+- 🌐 Animated 3D globe with rotating arcs
+- 🖼️ Curated project showcase with gradient visual highlights
+- 🧠 Floating technology icons for visual appeal
+- 📜 Highlighted certifications and career history
+- 💌 Contact CTA with direct email integration
+- 🎨 Default **dark mode** for modern aesthetic
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# portofolio-web
+
+
+## 📁 Project Structure
+
+/src 
+├── components/ # All reusable UI components 
+│ ├── Navbar.tsx 
+│ ├── Hero.tsx 
+│ ├── Projects.tsx 
+│ ├── Highlights.tsx 
+│ ├── Career.tsx 
+│ ├── Skills.tsx 
+│ └── Globe.tsx
+├── data/ # External JSON (e.g., globe data) 
+├── styles/ # Global CSS animations 
+├── pages/ # Page components 
+├── main.tsx # Vite entry point 
+└── theme.ts # Chakra theme customizations
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Christopheryu29/portfolio-website.git
+cd portfolio-website
+
+2. Install Dependencies
+
+npm install
+
+3. Start the Development Server
+
+npm run dev
+
+
+Open http://localhost:5173 to view it in the browser.
+
