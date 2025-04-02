@@ -38,16 +38,16 @@ Built with **React**, **Vite**, **Chakra UI**, **Framer Motion**, and **Three.js
 ```bash
 git clone https://github.com/Christopheryu29/portfolio-website.git
 cd portfolio-website
-
+```
 ### 2. Install Dependencies
 
 ```bash
 npm install
-
+```
 ### 3. Start the Development Server
-
+```
 npm run dev
-
+```
 
 Open http://localhost:5173 to view it in the browser.
 
